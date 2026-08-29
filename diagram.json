@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "RespiraEdge",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht", "top": -150, "left": 180, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot", "top": 150, "left": -180, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay", "top": 180, "left": 120, "attrs": {} },
+    { "type": "wokwi-buzzer", "id": "buzzer", "top": -120, "left": -180, "attrs": {} },
+    { "type": "wokwi-led", "id": "led", "top": -50, "left": -180, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "esp:GND.1", "dht:GND", "black", [ "v0" ] ],
+    [ "esp:3V3.1", "dht:VCC", "red", [ "v0" ] ],
+    [ "esp:D4", "dht:SDA", "green", [ "v0" ] ],
+    [ "esp:VP", "pot:SIG", "blue", [ "v0" ] ],
+    [ "esp:GND.2", "pot:GND", "black", [ "v0" ] ],
+    [ "esp:3V3.2", "pot:VCC", "red", [ "v0" ] ],
+    [ "esp:D25", "relay:IN", "orange", [ "v0" ] ],
+    [ "esp:GND.3", "relay:GND", "black", [ "v0" ] ],
+    [ "esp:VIN", "relay:VCC", "red", [ "v0" ] ],
+    [ "esp:D26", "buzzer:1", "purple", [ "v0" ] ],
+    [ "esp:GND.4", "buzzer:2", "black", [ "v0" ] ],
+    [ "esp:D33", "led:A", "yellow", [ "v0" ] ],
+    [ "esp:GND.5", "led:C", "black", [ "v0" ] ]
+  ]
+}
