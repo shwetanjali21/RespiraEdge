@@ -1,8 +1,4 @@
-Here is the exact formatted **`README.md`** file customized specifically for your repository (`shwetanjali21/RespiraEdge`).
 
-Create a new file named `README.md` inside your extracted folder, paste this code, and commit it to GitHub.
-
-```markdown
 # RespiraEdge: On-Device Edge AI for Autonomous Respiratory Distress & Apnea Detection
 
 ![RespiraEdge Banner](Screenshot%202026-08-29%20144630.png)
